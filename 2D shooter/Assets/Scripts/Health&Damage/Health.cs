@@ -230,6 +230,7 @@ public class Health : MonoBehaviour
         {
             if (gameObject.tag == "Player" && GameManager.instance != null)
             {
+             
                 GameManager.instance.GameOver();
             }
             if (gameObject.GetComponent<Enemy>() != null)

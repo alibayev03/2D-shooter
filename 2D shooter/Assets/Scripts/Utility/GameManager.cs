@@ -307,8 +307,10 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("score", score);
         if (uiManager != null)
         {
+            Debug.Log(gameOverPageIndex);
             player.SetActive(false);
             uiManager.allowPause = false;
+            
             uiManager.GoToPage(gameVictoryPageIndex);
             if (victoryEffect != null)
             {
